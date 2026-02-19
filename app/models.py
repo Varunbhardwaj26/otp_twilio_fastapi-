@@ -14,6 +14,10 @@ class JobApplication(Base):
     email = Column(String(255), nullable=False)
     phone = Column(String(20), nullable=False)
 
+    # rresume_key = Column(String(500), nullable=True)
+    # resume_filename = Column(String(255), nullable=True)
+    # resume_mime = Column(String(100), nullable=True)
+    # resume_size = Column(Integer, nullable=True)
     resume_url = Column(String(2000), nullable=True)
     status = Column(String(30), nullable=False, default="PENDING_OTP")
 
